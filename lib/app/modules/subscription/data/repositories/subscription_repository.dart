@@ -13,6 +13,6 @@ class SubscriptionRepository {
     final info = SubscriptionModel(
         age: age, name: name, password: password, email: email);
     final box = await Hive.openBox<SubscriptionModel>("subscription");
-    box.put("subscription", info);
+    box.put("subscription",info);
   }
 }
