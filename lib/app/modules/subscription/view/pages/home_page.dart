@@ -19,12 +19,11 @@ class _HomePageState extends ConsumerState<HomePage> {
     super.dispose();
   }
 
-  @override
   final passwordController = TextEditingController();
   final emailController = TextEditingController();
   bool _isObscure = false;
+  @override
   Widget build(BuildContext context) {
-    final stateGet = ref.watch(getSubscriptionState);
     ref.listen<GetSubscriptionState>(getSubscriptionState, (previous, next) {
       if (next is LoadFailure) {
         Container();

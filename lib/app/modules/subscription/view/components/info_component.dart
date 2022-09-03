@@ -28,7 +28,6 @@ class _InfoComponentState extends State<InfoComponent> {
 
   @override
   Widget build(BuildContext context) {
-    bool _isvisible = true;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

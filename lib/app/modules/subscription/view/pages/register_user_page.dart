@@ -19,7 +19,6 @@ class _RegisterUserPageState extends ConsumerState<RegisterUserPage> {
 
   @override
   Widget build(BuildContext context) {
-    final state = ref.watch(addSubscriptionState);
     return Scaffold(
       body: SafeArea(
           child: Padding(
