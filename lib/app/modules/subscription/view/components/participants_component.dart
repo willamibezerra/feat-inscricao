@@ -18,7 +18,8 @@ class ParticipantsComponent extends StatelessWidget {
         SizedBox(
           height: 10,
         ),
-        ParticipantesWidget(name: "Aline", image: "assets/images/aline.jpg"),
+        ParticipantesWidget(
+            name: "Willami", image: "assets/images/willami.jpg"),
         SizedBox(
           height: 10,
         ),
@@ -27,7 +28,7 @@ class ParticipantsComponent extends StatelessWidget {
         SizedBox(
           height: 10,
         ),
-        ParticipantesWidget(name: "Jairon", image: "assets/images/jairon.jpg"),
+        ParticipantesWidget(name: "Jairon", image: "assets/images/willami.jpg"),
         SizedBox(
           height: 10,
         )
