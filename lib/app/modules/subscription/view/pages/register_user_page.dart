@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:inscricao/app/modules/subscription/core/provider/subscription_provider.dart';
 import 'package:inscricao/app/modules/subscription/view/components/info_component.dart';
+import 'package:inscricao/app/shared/services/prefs_servicer.dart';
 import 'package:validatorless/validatorless.dart';
 
 class RegisterUserPage extends ConsumerStatefulWidget {
@@ -58,6 +59,7 @@ class _RegisterUserPageState extends ConsumerState<RegisterUserPage> {
                         _passwordController.text,
                         _emailController.text);
                     Navigator.pop(context);
+                    PrefsServices.save(_passwordController.text);
                   }
                 },
                 child: const Text("Entrar"),

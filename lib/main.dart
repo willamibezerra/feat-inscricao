@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:inscricao/app/modules/splash/view/pages/on_boarding_page.dart';
+import 'package:inscricao/app/modules/splash/view/pages/splash.dart';
 import 'package:inscricao/app/modules/subscription/view/pages/register_user_page.dart';
 import 'package:inscricao/app/modules/subscription/data/models/subscription_model.dart';
 import 'package:inscricao/app/modules/subscription/view/pages/home_page.dart';
@@ -27,11 +28,13 @@ class _MyAppState extends State<MyApp> {
     return ProviderScope(
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: "/home",
+        initialRoute: "/splash",
         routes: <String, WidgetBuilder>{
-          "/home": ((context) => const HomePage()),
+          "home/": ((context) => const HomePage()),
           "/register": (BuildContext context) => const RegisterUserPage(),
-          "/user": (BuildContext context) => const UserPage()
+          "/user": (BuildContext context) => const UserPage(),
+          "/onBoarding": (BuildContext context) => const OnBoardingPage(),
+          '/splash': (context) => const SplashPage()
         },
       ),
     );
